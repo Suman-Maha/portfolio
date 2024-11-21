@@ -53,7 +53,6 @@ a {
 
 a:hover {
     color: grey;
-    text-decoration: underline;
     text-underline-offset: 1rem;
     text-decoration-color: rgb(181, 181, 181);
 }
@@ -346,25 +345,27 @@ section {
 }
 
 .color-container1 {
-    height: 500px;
-    width: 850px;
+    height: 54vh;
+    width: 85vw;
 }
 
 .color-container2 {
-    height: 500px;
-    width: 850px;
+    height: 54vh;
+    width: 85vw;
 }
 
 .project-container-col-2 {  
-    height: 550px;
-    width: 1500px;
+    height: 60vh;
+    width: 82vw;
     display: grid;
     place-items: center;
 }
 
 .color-container3 {
-    height: 475px;
-    width: 750px;
+    /*height: 475px;
+    width: 750px;*/
+    height: 52vh;
+    width: 42vw;
 }
 
 .project-img {
