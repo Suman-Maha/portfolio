@@ -47,69 +47,11 @@
         margin-bottom: 2rem;
     }
     #profile {
-        height: 85vh;
+        height: 83vh;
         margin-bottom: 0;
-    }
-    #about {
-        height: 195vh;
-        margin-bottom: 0;
-    }
-    .details-container {
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-    }
-    .about-containers, .about-details-container {
-        display: block;
-    }
-    #projects {
-        height: 285vh;
-        margin-bottom: 0;
-    }
-    .project-img {
-        justify-content: center;
-        border-radius: 2rem;
-        width: 78vw;
-        height: 30vh;
-    }
-    #publications {
-        height: 445vh;
-        margin-bottom: 0;
-    }
-    .publication_outer_container {
-        margin-top: 0.25rem;
-    }
-    #paper{
-        font-size: 1rem;
-        line-height: 2rem;
-    }
-    #resume {
-        height: 235vh;
-        margin-bottom: 0;
-    }
-    .resume-container {
-        margin-top: 0.5rem;
-    }
-    .col-lg-1 {
-        width: 100%;
-        text-align: justify;
-        margin-bottom: 2rem;
-        font-size: 1rem;
-    }
-    .col-lg-2 {
-        width: 100%;
-        text-align: justify;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        font-size: 1rem;
-    }
-    #contact {
-        height: 50vh;
     }
     article {
         font-size: 1rem;
-    }
-    footer {
-        margin-bottom: 4rem;
     }
     footer nav {
         height: fit-content;
@@ -118,9 +60,6 @@
     .about-containers, .contact-info-upper-container, 
     .btn-container {
         flex-wrap: wrap;
-    }
-    .info-container {
-        display: block;
     }
     .contact-info-container {
         margin: 0;
@@ -138,8 +77,7 @@
     }
     .section__pic-container {
         width: auto;
-        height: 32vh;
-        width: 32vw;
+        height: 46vw;
         justify-content: center;
     }
     .section__text__p2 {
@@ -152,3 +90,4 @@
         text-align: justify;
     }
 }
+

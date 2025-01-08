@@ -357,6 +357,28 @@ section {
     background: rgb(250, 250, 250);
 }
 
+/*.color-container1 {
+    height: 500px;
+    width: 850px;
+}
+
+.color-container2 {
+    height: 500px;
+    width: 850px;
+}
+
+.project-container-col-2 {  
+    height: 550px;
+    width: 1500px;
+    display: grid;
+    place-items: center;
+}
+
+.color-container3 {
+    height: 475px;
+    width: 750px;
+}*/
+
 .project-img {
     display: flex;
     justify-content: center;
