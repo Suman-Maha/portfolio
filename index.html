@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage of Suman Mahapatra</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Suman Mahapatra</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Recent works</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Suman Mahapatra</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Recent works</a></li>
+          <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
+          <li><a href="#resume" onclick="toggleMenu()">Resume</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I am</p>
+        <h1 class="title">Suman Mahapatra</h1>
+        <p class="section__text__p2">Visiting Scientist</p>
+        <p class="section__text__p3">Indian Statistical Institute</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Suman-CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/scholar.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://scholar.google.com/citations?user=vf0fTpoAAAAJ&hl=en&oi=ao'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Suman-Maha'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/suman_about.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/research.jpg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Research Interests</h3>
+              <br>Biomedical Image Analysis
+              <br>Deep Generative Modeling
+              <br>Computer Vision
+              <br>Machine Learning
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/review.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Peer Review Activities</h3>
+              <br>IEEE Transactions on Medical Imaging
+              <br>Pattern Recognition (Elsevier)
+              <br>Frontiers in Oncology
+              <br>CINE 2024, PReMI 2023, ICDAI 2023, PReMI 2021
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am currently a Visiting Scientist  at 
+              <a href="https://www.isical.ac.in/~bibl/index.html">
+                Biomedical Imaging and Bioinformatics Lab
+              </a>, Machine Intelligence Unit of the 
+              <a href="https://www.isical.ac.in/">
+              Indian Statistical Institute
+              </a>, Kolkata, India.
+              I have successfully defended my doctoral 
+                thesis entitled 
+              <a href="./assets/Thesis-Abstract.pdf">
+                <b> 
+                  <font style="font-variant: small-caps; font-size: 22px;">
+                  Nuclei Segmentation and Color Normalization of Histological Images:
+                  </font>
+                  Rough-Fuzzy Circular Clustering to Deep Generative Modeling
+                </b>
+              </a>
+              on December 17, 2024 under the supervision of 
+              <a href="https://www.isical.ac.in/~pmaji/">
+                Prof. Pradipta Maji
+              </a>.
+              [<a href="http://dspace.isical.ac.in:8080/jspui/handle/10263/7484">
+                Link to my thesis
+              </a>].
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Contributory Works</h1>
+      <div class="contribution-details-container">
+        <div class="project-container-col">
+          <div class="details-container color-container1">
+            <div class="article-container">
+              <img
+                src="./assets/Ostrich.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Optimal Transport Driven Asymmetric I2I Translation</h2>
+            <p><strong>Related Publication:</strong> Manuscript Under Preparation (Chapter 6 of Ph.D. thesis)</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='http://dspace.isical.ac.in:8080/jspui/handle/10263/7484'"
+              >
+                Paper Link
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Suman-Maha/Ostrich'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container2">
+            <div class="article-container">
+              <img
+                src="./assets/TredMiL.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Truncated Normal Mixture Prior Based Deep Latent Model</h2>
+            <p><strong>Related Publication:</strong> IEEE Transactions on Medical Imaging, 2023</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ieeexplore.ieee.org/document/10024118'"
+              >
+                Paper Link
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Suman-Maha/TredMiL'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container3">
+            <div class="article-container">
+              <img
+                src="./assets/RFCC.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Circular Clustering in Fuzzy Approximation Spaces</h2>
+            <p><strong>Related Publication:</strong> IEEE Transactions on Medical Imaging, 2020</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://ieeexplore.ieee.org/document/8918273'"
+              >
+                Paper Link
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Suman-Maha/RFCC'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <p class="section__text__p1">Publication Details</p>
+      <h1 class="title">Publications</h1>
+      <div class="publication_outer_container">
+        <div class="publication_container">
+          <p class="journal"><h2><i><u>Manuscript Under Preparation</u></i></h2></p>
+          <div class="journal-align">
+            <ul>
+              <li id="paper">
+                <strong>Suman Mahapatra</strong> and Pradipta Maji, 
+                <a href="http://dspace.isical.ac.in:8080/jspui/handle/10263/7484">
+                  Optimal Transport Driven Asymmetric Image-to-Image Translation for Nuclei Segmentation of Histological Images
+                </a>
+                , in <strong>Manuscript Under Prepation</strong>, 
+                Related Publication: Chapter 6 of Ph.D. thesis.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="publication_container">
+          <p class="journal"><h2><i><u>International Journal Papers</u></i></h2></p>
+          <div class="journal-align">
+            <ul>
+              <li id="paper">
+                <strong>Suman Mahapatra</strong> and Pradipta Maji, 
+                <a href="https://ieeexplore.ieee.org/document/10024118">
+                  Truncated Normal Mixture Prior Based Deep Latent Model for Color Normalization of Histology Images
+                </a>
+                , in <strong>IEEE Transactions on Medical Imaging</strong>, 
+                42(6), pp. 1746--1757, 2023, DOI: 10.1109/TMI.2023.3238425.
+              </li>
+              <li id="paper">
+                Pradipta Maji and <strong>Suman Mahapatra</strong>, 
+                <a href="https://ieeexplore.ieee.org/document/8918273">
+                  Circular Clustering in Fuzzy Approximation Spaces for Color Normalization of Histological Images
+                </a>
+                , in <strong>IEEE Transactions on Medical Imaging</strong>, 
+                39(5), pp. 1735--1745, 2020, DOI: 10.1109/TMI.2019.2956944.
+              </li>
+              <li id="paper">
+                Pradipta Maji and <strong>Suman Mahapatra</strong>, 
+                <a href="https://content.iospress.com/articles/fundamenta-informaticae/fi1756">
+                  Rough - Fuzzy Circular Clustering for Color Normalization of Histological Images
+                </a>
+                , in <strong>Fundamenta Informaticae</strong>, 
+                164(1), pp. 103--117, 2019, DOI: 10.3233/FI-2019-1756.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="publication_container">
+          <p class="conference"><h2><i><u>International Conference Papers</u></i></h2></p>
+          <div class="conference-align">
+            <ul>
+              <li id="paper">Jyotsna Kumar Mandal and <strong>Suman Mahapatra</strong>, 
+                <a href="https://link.springer.com/chapter/10.1007/978-81-322-2526-3_55">
+                  Z Transformation Based High Payload Authentication Technique with Higher Region of Convergence Value (ZATHRoc)
+                </a>
+                , in <strong>Proceedings of 2nd International Conference on Computer and Communication Technologies (IC3T2015)</strong>, 
+                Hyderabad, India, pp. 529--537, 2015.
+              </li>
+              <li id="paper">Sukalyan Som, Sayani Sen, <strong>Suman Mahapatra</strong> and Sarbani Palit, 
+                <a href="https://link.springer.com/chapter/10.1007/978-81-322-2250-7_79">
+                  A Selective Bitplane Based Encryption of Grayscale Images with Tamper Detection, Localization and Recovery Based on Watermark
+                </a>
+                , in <strong>Proceedings of 2nd International Conference on Information Systems Design and Intelligent Applications (INDIA2015)</strong>, 
+                Kalyani, India, pp. 793--802, 2015.
+              </li>
+              <li id="paper">Sukalyan Som, <strong>Suman Mahapatra</strong> and Sayani Sen, 
+                <a href="https://link.springer.com/chapter/10.1007/978-81-322-2250-7_74">
+                  A No Reference Image Authentication Scheme Based On Digital Watermark
+                </a>
+                , in <strong>Proceedings of 2nd International Conference on Information Systems Design and Intelligent Applications (INDIA2015)</strong>, 
+                Kalyani, India, pp. 741--749, 2015.
+              </li>
+              <li id="paper"><strong>Suman Mahapatra</strong>, Jyotsna Kumar Mandal and Madhumita Sengupta, 
+                <a href="https://link.springer.com/chapter/10.1007/978-81-322-2247-7_80">
+                  Authentication in Higher Region of Convergence of Z Transform Domain (AHRocZ)
+                </a>
+                , in <strong>Proceedings of 2nd International Conference on Information Systems Design and Intelligent Applications (INDIA2015)</strong>, 
+                Kalyani, India, pp. 787--795, 2015.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="publication_container">
+          <p class="academic"><h2><i><u>Academic Publications</u></i></h2></p>
+          <div class="academic-publication-align">
+            <ul>
+              <li id="paper">Ph.D. thesis entitled 
+                <a href="./assets/Thesis-Abstract.pdf">
+                  Nuclei Segmentation and Color Normalization of Histological Images: Rough-Fuzzy Circular Clustering to Deep Generative Modeling
+                </a>
+                , under the supervision of 
+                <a href="https://www.isical.ac.in/~pmaji/">Prof. Pradipta Maji</a>
+                , Machine Intelligence Unit, Indian Statistical Institute, Kolkata, India, 2024.
+                [<a href="./assets/Thesis-Abstract.pdf">Abstract</a>] 
+                [<a href="./assets/PhD_Viva-Voce_Seminar-Suman_Mahapatra.pdf">Slides</a>]
+              </li>
+              <li id="paper">M.Tech. thesis entitled 
+                <a href="./assets/MTech_Thesis-Suman_Mahapatra.pdf">
+                  Design and Implementation of Authentication Technique in Higher Region of Convergence of Z Transformation  
+                </a>
+                , under the supervision of <a href="https://klyuniv.ac.in/professors/jyostna-kumar-mandal/">Prof. Jyotsna Kumar Mandal</a>
+                , Department of Computer Science and Engineering, University of Kalyani, Kalyani, India, 2015.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume">
+      <p class="section__text__p1">Short Bio</p>
+      <h1 class="title">Resume</h1>
+      <div class="resume-container">
+        <div class="info-container">
+          <div class="col-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <h4 class="resume-title"><u>Education</u></h4>
+            <div class="resume-item">
+              <h4>PhD in Computer Science (<a href="./assets/PhD_Certificate.pdf" target="_blank">Thesis defended</a>)</h4>
+              <h5>2018 - 2024</h5>
+              <p><em>Indian Statistical Institute, Kolkata, India</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Research Fellow, funded by Council of Scientific and Industrial Research</h4>
+              <h5>2015 - 2018</h5>
+              <p><em>Indian Statistical Institute, Kolkata, India</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Master of Technology in Computer Science and Engineering</h4>
+              <h5>2013 - 2015</h5>
+              <p><em>University of Kalyani, India</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Engineering (Honours) in Computer Science and Engineering</h4>
+              <h5>2009 - 2013</h5>
+              <p><em>University Institute of Technology, The University of Burdwan, India</em></p>
+            </div>
+          </div>
+          <div class="col-lg-2" data-aos="fade-up">
+            <h4 class="resume-title"><u>Professional Experience </u></h4>
+            <div class="resume-item">
+              <h4>Awards and Rank</h4>
+              <ul>
+                <li> <a href="./assets/IDRBT_prize.pdf" target="_blank">Third Prize</a> in <strong> IDRBT Doctoral Colloquium</strong> for the paper entitled <strong>
+                  "Color Normalization of Histological Images Using Rough-Fuzzy Circular Clustering"</strong>, December 6-7, 2021.</li>
+                <li> All India Rank 259 in <strong>Engineering Sciences</strong> under the <strong>Council of Scientific & Industrial Research</strong> 
+                  fellowship scheme, 2014.</li>
+                </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Teaching Assistantship</h4>
+              <ul>
+                <li>
+                  <strong>Image Processing - I</strong> for Master of Technology (Computer Science), 2024-25 (Ongoing).
+                </li>
+                <li>
+                  <strong>Computer Vision</strong> for Master of Technology (Computer Science), 2024-25.
+                </li>
+                <li>
+                  <strong>Image Processing - I</strong> for Master of Technology (Computer Science), 2023-24.
+                </li>
+                <li> 
+                  <strong>Programming and Data Structure</strong> for Bachelor of Statistics, 2019-20.
+                </li>
+                </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Memberships (Professional Bodies)</h4>
+                <ul>
+                  <li> Life Member, <a href="https://www.sciencecongress.nic.in/" target="_blank">Indian Science Congress Association</a> 
+                    (Membership No.: L37670).</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:sumancse_r@isical.ac.in">sumancse_r@isical.ac.in</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sumanmahapatra1990/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Recent works</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Suman Mahapatra. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
